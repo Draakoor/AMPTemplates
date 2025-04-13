@@ -31,3 +31,4 @@ Meta.EndpointURIFormat=
 Meta.OS=1
 Meta.URL=https://store.steampowered.com/app/393080/
 Meta.AppConfigId=31ce3972-13ec-40cc-b103-7a35f2a4c9d7
+Meta.MinAMPVersion=2.5.0.4
