@@ -1,5 +1,5 @@
-App.AdminMethod=PinballWizard
-App.ApplicationReadyMode=Immediate
+App.AdminMethod=QuakeRCON
+App.ApplicationReadyMode=RCONConnected
 App.RCONConnectDelaySeconds=5
 App.RCONConnectRetrySeconds=5
 App.RCONHeartbeatMinutes=0
