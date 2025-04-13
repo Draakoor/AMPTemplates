@@ -1,7 +1,11 @@
 App.AdminMethod=QuakeRCON
 App.ApplicationReadyMode=RCONConnected
+App.RCONConnectDelaySeconds=5
+App.RCONConnectRetrySeconds=5
+App.RCONHeartbeatMinutes=0
+App.RCONHeartbeatCommand=ping
 App.BaseDirectory=./call-of-duty-4-modern-warfare-remasterd/
-App.CommandLineArgs={{$PlatformArgs}} -console -dedicated -nosteam +set rcon_password "{{$RemoteAdminPassword}}" +exec server.cfg +net_port "{{$GamePort}}" +set bots_manage_fill 8 {{$FormattedArgs}} +map_rotate 
+App.CommandLineArgs={{$PlatformArgs}} -console -dedicated -nosteam +set net_ip "{{$ApplicationIPBinding}}" +net_port "{{$GamePort}}" +set rcon_password "{{$RemoteAdminPassword}}" +exec server.cfg +set bots_manage_fill 8 {{$FormattedArgs}} +map_rotate 
 App.CommandLineParameterDelimiter= 
 App.CommandLineParameterFormat=-{0} "{1}"
 App.DisplayName=Call of Duty 4 Modern Warfare Remasterd
@@ -38,3 +42,4 @@ Meta.AppConfigId=31ce3972-13ec-40cc-b103-7a35f2a4c9d7
 Meta.MinAMPVersion=2.5.0.4
 Meta.ConfigManifest=call-of-duty-4-modern-warfare-remasterdconfig.json
 Meta.MetaConfigManifest=call-of-duty-4-modern-warfare-remasterdconfigmetaconfig.json
+App.MonitorChildProcessName=^.*h1-mod\.exe.*\+set net_port {{$GamePort}}.*$
