@@ -1,7 +1,7 @@
 App.AdminMethod=QuakeRCON
 App.ApplicationReadyMode=RCONConnected
 App.BaseDirectory=./call-of-duty-4-modern-warfare-remasterd/
-App.CommandLineArgs={{$PlatformArgs}} -console -dedicated -nosteam +set rcon_password "{{$RemoteAdminPassword}}" +exec server.cfg +net_port {{$GamePort}} +set bots_manage_fill 8 {{$FormattedArgs}} +map_rotate 
+App.CommandLineArgs={{$PlatformArgs}} -console -dedicated -nosteam +set rcon_password "{{$RemoteAdminPassword}}" +exec server.cfg +net_port "{{$GamePort}}" +set bots_manage_fill 8 {{$FormattedArgs}} +map_rotate 
 App.CommandLineParameterDelimiter= 
 App.CommandLineParameterFormat=-{0} "{1}"
 App.DisplayName=Call of Duty 4 Modern Warfare Remasterd
