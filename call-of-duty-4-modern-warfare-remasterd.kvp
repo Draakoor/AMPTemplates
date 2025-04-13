@@ -1,10 +1,13 @@
 App.AdminMethod=STDIO
 App.ApplicationReadyMode=RCONConnected
 App.BaseDirectory=./call-of-duty-4-modern-warfare-remasterd/
-App.CommandLineArgs=-nosteam -dedicated +exec server.cfg +net_port {{$ApplicationPort1}} +set bots_manage_fill 8 +map_rotate 
+App.CommandLineArgs=-nosteam -dedicated +exec server.cfg +net_port {{$GamePort}} +set bots_manage_fill 8 +map_rotate 
 App.CommandLineParameterDelimiter= 
 App.CommandLineParameterFormat=-{0} "{1}"
 App.DisplayName=Call of Duty 4 Modern Warfare Remasterd
+App.Ports=@IncludeJson[callofdutyports.json]
+App.AdminPortRef=GamePort
+App.PrimaryApplicationPortRef=GamePort
 App.ExecutableLinux=
 App.ExecutableWin=h1-mod.exe
 App.ExitMethod=String
