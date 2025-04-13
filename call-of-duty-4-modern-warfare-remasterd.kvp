@@ -14,6 +14,7 @@ App.HasWritableConsole=true
 App.RapidStartup=false
 App.RootDir=./call-of-duty-4-modern-warfare-remasterd/
 App.UpdateSource=Multi
+AppConfigId=31ce3972-13ec-40cc-b103-7a35f2a4c9d7
 App.UpdateSources=[{"UpdateStageName": "GitHub Release Download","UpdateSourcePlatform": "All", "UpdateSource": "GithubRelease", "UpdateSourceData": "auroramod/h1-mod"}]
 App.WorkingDir=
 Console.AppReadyRegex=^Server is ready.$
