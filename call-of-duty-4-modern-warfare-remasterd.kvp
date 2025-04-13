@@ -1,4 +1,4 @@
-App.AdminMethod=STDIO
+App.AdminMethod=PinballWizard
 App.ApplicationReadyMode=Immediate
 App.RCONConnectDelaySeconds=5
 App.RCONConnectRetrySeconds=5
