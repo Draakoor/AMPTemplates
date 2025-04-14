@@ -21,7 +21,7 @@
         "OverwriteExistingFiles": false,
         "ForceDownloadPlatform": "Windows",
         "DeleteAfterExtract": true,
-        "OneShot": false
+        "OneShot": true
     },
     {
         "UpdateStageName": "H1-Mod Download",
@@ -40,5 +40,22 @@
         "UpdateSourceArgs": "server.cfg",
         "UpdateSourceTarget": "{{$FullBaseDir}}main",
         "OverwriteExistingFiles": false
+    },
+    {
+        "UpdateStageName": "MWR Cleaner Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/skkuull/cod-files-cleaner/releases/download/v1.1/mwr-files-cleaner.exe",
+        "UpdateSourceArgs": "mwr-files-cleaner.exe",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "OverwriteExistingFiles": false
+    },
+    {
+        "UpdateStageName": "Run MWR Cleaner",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "cmd.exe",
+        "UpdateSourceArgs": "/C cd call-of-duty-4-modern-warfare-remasterd\\393100 && .\\mwr-files-cleaner.exe",
+        "SkipOnFailure": false
     }
 ]
