@@ -29,21 +29,16 @@
         "UpdateSource": "GithubRelease",
         "UpdateSourceData": "h1-mod.exe",
         "UpdateSourceArgs": "auroramod/h1-mod",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "OverwriteExistingFiles": true
     },
     {
         "UpdateStageName": "Config File Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/Draakoor/AMPTemplates/refs/heads/main/call-of-duty-4-modern-warfare-remasterdserver.cfg",
-        "UpdateSourceTarget": "server.cfg",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "Config File Download",
-        "DeleteAfterExtract": false,
-        "OneShot": false
+        "UpdateSourceArgs": "server.cfg",
+        "UpdateSourceTarget": "{{$FullBaseDir}}main",
+        "OverwriteExistingFiles": false
     }
 ]
