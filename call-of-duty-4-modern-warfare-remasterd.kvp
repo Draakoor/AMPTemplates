@@ -25,6 +25,7 @@ App.ExitMethod=String
 App.ExitString=quit
 App.ExitTimeout=30
 App.ExitFile=app_exit.lck
+App.ForceUpdate=False
 App.SupportsLiveSettingsChanges=False
 App.LiveSettingChangeCommandFormat=set {0} "{1}"
 App.ApplicationIPBinding=0.0.0.0
