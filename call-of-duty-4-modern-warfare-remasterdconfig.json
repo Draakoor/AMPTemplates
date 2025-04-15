@@ -83,7 +83,7 @@
         "FieldName": "sv_hostname",
         "InputType": "text",
         "ParamFieldName": "sv_hostname",
-        "DefaultValue": "^1AMP Hosted CODMW2 Server",
+        "DefaultValue": "^1AMP Hosted CODMWR Server",
         "EnumValues": {}
     },
     {
