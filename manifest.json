@@ -1,9 +1,9 @@
 {
-	"id": "ec280171-c67b-4cf8-923f-dc27fea91ee1",
-	"authors": ["CubeCoders Limited", "AMP Community"],
-	"origin": "https://github.com/CubeCoders/AMPTemplates.git",
-	"url": "https://github.com/CubeCoders/AMPTemplates",
+	"id": "2d2f5b8a-2f79-4e2d-a994-536adab12e9a",
+	"authors": ["Draakoor"],
+	"origin": "https://github.com/Draakoor/AMPTemplates.git",
+	"url": "https://github.com/Draakoor/AMPTemplates",
 	"imagefile": "",
-	"prefix": "",
+	"prefix": "dk",
 	"repotype": "AppTemplates"
 }
