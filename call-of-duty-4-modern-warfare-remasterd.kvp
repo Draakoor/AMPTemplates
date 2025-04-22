@@ -2,7 +2,7 @@ Meta.DisplayName=Call of Duty 4 Modern Warfare Remasterd
 Meta.Description=H1-Mod Dedicated Server
 Meta.Arch=x86_64
 Meta.Author=Draakoor - Made with AMP Config Generator
-Meta.URL=https://store.steampowered.com/app/393080/
+Meta.URL=https://github.com/auroramod/h1-mod
 Meta.MinAMPVersion=2.4.6.6
 Meta.SpecificDockerImage=
 Meta.DockerRequired=False
@@ -74,7 +74,7 @@ Meta.ConfigManifest=call-of-duty-4-modern-warfare-remasterdconfig.json
 Meta.MetaConfigManifest=call-of-duty-4-modern-warfare-remasterdmetaconfig.json
 Meta.ConfigRoot=call-of-duty-4-modern-warfare-remasterd.kvp
 App.RootDir=./call-of-duty-4-modern-warfare-remasterd/
-Meta.DisplayImageSource=steam:393100
+Meta.DisplayImageSource=url:https://github.com/auroramod/h1-mod/raw/develop/assets/github/banner.png?raw=true
 App.BaseDirectory=./call-of-duty-4-modern-warfare-remasterd/393100/
 App.WorkingDir=393100
 App.ExecutableWin=393100\h1-mod.exe
