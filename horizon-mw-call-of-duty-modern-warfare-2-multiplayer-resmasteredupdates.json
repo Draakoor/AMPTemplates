@@ -71,8 +71,8 @@
         "UpdateStageName": "Update Script Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/Draakoor/AMPTemplates/refs/heads/dev/horizon-mw-call-of-duty-modern-warfare-2-multiplayer-resmasteredserver.ps1",
-        "UpdateSourceArgs": "updater.ps1",
+        "UpdateSourceData": "https://raw.githubusercontent.com/Draakoor/AMPTemplates/refs/heads/dev/horizon-mw-call-of-duty-modern-warfare-2-multiplayer-resmasteredserver.py",
+        "UpdateSourceArgs": "updater.py",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": false
     },
