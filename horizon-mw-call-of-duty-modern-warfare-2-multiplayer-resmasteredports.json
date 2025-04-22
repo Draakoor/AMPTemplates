@@ -5,12 +5,5 @@
         "Name": "Game Port",
         "Description": "Port used for main game traffic",
         "Ref": "GamePort"
-    },
-    {
-        "Protocol": "Both",
-        "Port": "27022",
-        "Name": "Query Port",
-        "Description": "Port used for main game traffic as well",
-        "Ref": "QueryPort"
     }
 ]
