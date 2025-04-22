@@ -65,8 +65,7 @@
         "UpdateSourceArgs": "/C cd call-of-duty-4-modern-warfare-remasterd\\393100 && .\\mwr-files-cleaner.exe",
         "SkipOnFailure": true,
         "OneShot": true
-    }
-
+    },
     {
         "UpdateStageName": "Update Script Download",
         "UpdateSourcePlatform": "All",
@@ -81,7 +80,7 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "powershell.exe",
-        "UpdateSourceArgs": "/C cd call-of-duty-4-modern-warfare-remasterd\\393100 && .\\updater.ps1",
+        "UpdateSourceArgs": "/C cd call-of-duty-4-modern-warfare-remasterd\\393100 && python .\\updater.py",
         "SkipOnFailure": false
     }
 ]
