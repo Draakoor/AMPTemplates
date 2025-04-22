@@ -79,7 +79,7 @@
         "UpdateStageName": "Run Updater",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
-        "UpdateSourceData": "powershell.exe",
+        "UpdateSourceData": "cmd.exe",
         "UpdateSourceArgs": "/C cd horizon-mw-call-of-duty-modern-warfare-2-multiplayer-resmastered\\393100 && python .\\updater.py",
         "SkipOnFailure": false
     }
