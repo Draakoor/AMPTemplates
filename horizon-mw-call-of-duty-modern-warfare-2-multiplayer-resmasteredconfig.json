@@ -87,6 +87,30 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Message of the day",
+        "Category": "HorizonMW:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets the message of the day for the server. Colour codes can be used: ^0=Black, ^1=Red, ^2=Green, ^3=Yellow, ^4=Blue, ^5=Cyan, ^6=Pink, ^7=White, ^8=Team Colours, ^9=Grey, ^:=Rainbow",
+        "Keywords": "sv_motd,motd,message",
+        "FieldName": "sv_motd",
+        "InputType": "text",
+        "ParamFieldName": "sv_motd",
+        "DefaultValue": "^4Welcome to our server!",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Server Key",
+        "Category": "HorizonMW:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets your server key to list on serverlist",
+        "Keywords": "sv_serverkey,serverkey,server,key",
+        "FieldName": "sv_serverkey",
+        "InputType": "text",
+        "ParamFieldName": "sv_serverkey",
+        "DefaultValue": "ENTERMYKEY",
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Server Password",
         "Category": "HorizonMW:stadia_controller",
         "Subcategory": "Server:dns:1",
@@ -120,8 +144,8 @@
         "FieldName": "sv_maprotation",
         "InputType": "Textarea",
         "ParamFieldName": "sv_maprotation",
-        "DefaultValue": "gametype war map mp_backlot map mp_bloc map mp_bog map mp_cargoship map mp_citystreets map mp_convoy map mp_countdown map mp_crash map mp_crossfire map mp_farm map mp_overgrown map mp_pipeline map mp_shipment map mp_showdown map mp_strike map mp_vacant map mp_crash_snow map mp_broadcast map mp_carentan map mp_creek map mp_killhouse",
-        "Placeholder": "gametype war map mp_backlot map mp_bloc map mp_bog map mp_cargoship map mp_citystreets map mp_convoy map mp_countdown map mp_crash map mp_crossfire map mp_farm map mp_overgrown map mp_pipeline map mp_shipment map mp_showdown map mp_strike map mp_vacant map mp_crash_snow map mp_broadcast map mp_carentan map mp_creek map mp_killhouse",
+        "DefaultValue": "gametype war map mp_broadcast gametype dom map mp_brecourt gametype conf map mp_convoy gametype war map mp_underpass gametype dom map mp_bog_summer gametype conf map mp_trailerpark gametype war map mp_crash_snow gametype dom map mp_terminal gametype conf map mp_bloc gametype war map mp_subbase gametype dom map mp_backlot gametype conf map mp_storm gametype war map mp_bog gametype dom map mp_nightshift gametype conf map mp_carentan gametype war map mp_boneyard gametype dom map mp_countdown gametype conf map mp_compact gametype war map mp_crash gametype dom map mp_rust gametype conf map mp_creek gametype war map mp_rundown gametype dom map mp_farm gametype conf map mp_quarry gametype war map mp_crossfire gametype dom map mp_checkpoint gametype conf map mp_citystreets gametype war map mp_invasion gametype dom map mp_farm_spring gametype conf map mp_highrise gametype war map mp_killhouse gametype conf map mp_fuel2 gametype war map mp_overgrown gametype dom map mp_favela gametype conf map mp_pipeline gametype war map mp_estate gametype dom map mp_shipment gametype conf map mp_derail gametype war map mp_showdown gametype dom map mp_abandon gametype conf map mp_strike gametype war map mp_complex gametype dom map mp_vacant gametype conf map mp_afghan gametype war map mp_cargoship",
+        "Placeholder": "gametype war map mp_broadcast gametype dom map mp_brecourt gametype conf map mp_convoy gametype war map mp_underpass gametype dom map mp_bog_summer gametype conf map mp_trailerpark gametype war map mp_crash_snow gametype dom map mp_terminal gametype conf map mp_bloc gametype war map mp_subbase gametype dom map mp_backlot gametype conf map mp_storm gametype war map mp_bog gametype dom map mp_nightshift gametype conf map mp_carentan gametype war map mp_boneyard gametype dom map mp_countdown gametype conf map mp_compact gametype war map mp_crash gametype dom map mp_rust gametype conf map mp_creek gametype war map mp_rundown gametype dom map mp_farm gametype conf map mp_quarry gametype war map mp_crossfire gametype dom map mp_checkpoint gametype conf map mp_citystreets gametype war map mp_invasion gametype dom map mp_farm_spring gametype conf map mp_highrise gametype war map mp_killhouse gametype conf map mp_fuel2 gametype war map mp_overgrown gametype dom map mp_favela gametype conf map mp_pipeline gametype war map mp_estate gametype dom map mp_shipment gametype conf map mp_derail gametype war map mp_showdown gametype dom map mp_abandon gametype conf map mp_strike gametype war map mp_complex gametype dom map mp_vacant gametype conf map mp_afghan gametype war map mp_cargoship",
         "EnumValues": {}
     },
     {
