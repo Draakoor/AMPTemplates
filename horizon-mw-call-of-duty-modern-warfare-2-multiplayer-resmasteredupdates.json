@@ -62,7 +62,7 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C cd call-of-duty-4-modern-warfare-remasterd\\393100 && .\\mwr-files-cleaner.exe",
+        "UpdateSourceArgs": "/C cd horizon-mw-call-of-duty-modern-warfare-2-multiplayer-resmastered\\393100 && .\\mwr-files-cleaner.exe",
         "SkipOnFailure": true,
         "OneShot": true
     },
@@ -80,7 +80,7 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "powershell.exe",
-        "UpdateSourceArgs": "/C cd call-of-duty-4-modern-warfare-remasterd\\393100 && python .\\updater.py",
+        "UpdateSourceArgs": "/C cd horizon-mw-call-of-duty-modern-warfare-2-multiplayer-resmastered\\393100 && python .\\updater.py",
         "SkipOnFailure": false
     }
 ]
