@@ -1,9 +1,9 @@
 {
-	"id": "2d2f5b8a-2f79-4e2d-a994-536adab12e9a",
+	"id": "b65d3d9a-fbcb-4d20-9cc3-88c5e68331b0",
 	"authors": ["Draakoor"],
 	"origin": "https://github.com/Draakoor/AMPTemplates.git",
 	"url": "https://github.com/Draakoor/AMPTemplates",
 	"imagefile": "",
-	"prefix": "dk",
+	"prefix": "dev",
 	"repotype": "AppTemplates"
 }
