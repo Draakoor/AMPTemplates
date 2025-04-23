@@ -1,9 +1,10 @@
 {
-	"id": "eece64ab-6b54-42da-bd11-3f50b182c96e",
-	"authors": ["Draakoor"],
-	"origin": "https://github.com/Draakoor/AMPTemplates.git",
-	"url": "https://github.com/Draakoor/AMPTemplates/tree/dev",
-	"imagefile": "",
-	"prefix": "dev",
-	"repotype": "AppTemplates"
+    "id": "15073adb-069a-4080-820d-b290bb41f831",
+    "authors": [
+        "Draakoor - Made with AMP Config Generator"
+    ],
+    "origin": "https://github.com/Draakoor - Made with AMP Config Generator/AMPTemplates.git",
+    "url": "https://github.com/Draakoor - Made with AMP Config Generator/AMPTemplates",
+    "imagefile": "",
+    "prefix": "Draakoor - Made with AMP Config Generator"
 }
