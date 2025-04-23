@@ -25,7 +25,7 @@
         "Keywords": "",
         "FieldName": "$GamePort",
         "InputType": "number",
-        "Hidden": true,
+        "Hidden": false,
         "ParamFieldName": "net_port",
         "EnumValues": {}
     },
