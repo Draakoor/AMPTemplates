@@ -1,0 +1,44 @@
+[
+    {
+        "DisplayName": "Server Config",
+        "Category": "HorizonMW:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Name of Serverconfig file",
+        "Keywords": "server,config",
+        "FieldName": "$Serverconfig",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "$Serverconfig",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "server2.cfg",
+        "Placeholder": "server2.cfg",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Game Port",
+        "Category": "HorizonMW:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "$GamePort",
+        "InputType": "number",
+        "Hidden": false,
+        "ParamFieldName": "net_port",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "IP Binding",
+        "Category": "HorizonMW:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "",
+        "FieldName": "$ApplicationIPBinding",
+        "InputType": "text",
+        "Hidden": true,
+        "ParamFieldName": "net_ip",
+        "EnumValues": {}
+    }
+]
