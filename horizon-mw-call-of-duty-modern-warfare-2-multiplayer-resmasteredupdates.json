@@ -73,6 +73,7 @@
         "UpdateSourceData": "https://raw.githubusercontent.com/Draakoor/AMPTemplates/refs/heads/dev/horizon-mw-call-of-duty-modern-warfare-2-multiplayer-resmasteredserver.py",
         "UpdateSourceArgs": "updater.py",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "SkipOnFailure": true,
         "OverwriteExistingFiles": false
     },
     {
@@ -81,6 +82,6 @@
         "UpdateSource": "Executable",
         "UpdateSourceData": "cmd.exe",
         "UpdateSourceArgs": "/C cd horizon-mw-call-of-duty-modern-warfare-2-multiplayer-resmastered\\393100 && python .\\updater.py",
-        "SkipOnFailure": false
+        "SkipOnFailure": true
     }
 ]
