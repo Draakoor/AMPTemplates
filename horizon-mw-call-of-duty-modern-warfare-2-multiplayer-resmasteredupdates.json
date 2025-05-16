@@ -27,6 +27,7 @@
         "OverwriteExistingFiles": false,
         "ForceDownloadPlatform": "Windows",
         "DeleteAfterExtract": true,
+        "SkipOnFailure": true,
         "OneShot": true
     },
     {
