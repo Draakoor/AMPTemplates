@@ -99,18 +99,6 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Server Key",
-        "Category": "HorizonMW:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "Sets your server key to list on serverlist",
-        "Keywords": "sv_serverkey,serverkey,server,key",
-        "FieldName": "sv_serverkey",
-        "InputType": "text",
-        "ParamFieldName": "sv_serverkey",
-        "DefaultValue": "ENTERMYKEY",
-        "EnumValues": {}
-    },
-    {
         "DisplayName": "Server Password",
         "Category": "HorizonMW:stadia_controller",
         "Subcategory": "Server:dns:1",
