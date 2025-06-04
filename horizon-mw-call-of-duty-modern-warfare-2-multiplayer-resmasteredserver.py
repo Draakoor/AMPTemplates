@@ -1,3 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Original Author: https://github.com/Draakoor
+Modifications by: https://github.com/msmcpeake
+Changelog:
+  - Translated all comments and output from German to English
+  - Added final success message: "✅ Manifest processing complete. All files are up to date."
+"""
+
 import os
 import hashlib
 import requests
@@ -9,7 +19,7 @@ BASE_DOWNLOAD_URL = "https://par-1.cdn.horizonmw.org/"
 
 def calculate_sha256(file_path):
     """
-    Berechnet den SHA-256-Hash einer Datei.
+    Calculates the SHA-256 hash of a file.
     """
     sha256_hash = hashlib.sha256()
     try:
@@ -22,7 +32,7 @@ def calculate_sha256(file_path):
 
 def download_file(file_url, local_path):
     """
-    Lädt eine Datei von der angegebenen URL herunter und speichert sie lokal.
+    Downloads a file from the specified URL and saves it locally.
     """
     os.makedirs(os.path.dirname(local_path), exist_ok=True)
     try:
@@ -31,46 +41,47 @@ def download_file(file_url, local_path):
         with open(local_path, "wb") as f:
             for chunk in response.iter_content(chunk_size=8192):
                 f.write(chunk)
-        print(f"Heruntergeladen: {local_path}")
+        print(f"Downloaded: {local_path}")
     except Exception as e:
-        print(f"Fehler beim Herunterladen von {file_url}: {e}")
+        print(f"Error downloading {file_url}: {e}")
 
 def process_manifest(manifest):
     """
-    Verarbeitet das Manifest, überprüft und lädt Dateien bei Bedarf herunter.
+    Processes the manifest, verifies files, and downloads them if necessary.
     """
     for module in manifest.get("Modules", []):
-        print(f"Verarbeite Modul: {module['Name']} (Version {module['Version']})")
+        print(f"Processing module: {module['Name']} (Version {module['Version']})")
         files_with_hashes = module.get("FilesWithHashes", {})
         download_path = module.get("DownloadInfo", {}).get("DownloadPath", "")
 
         for file_path, expected_hash in files_with_hashes.items():
-            # Überprüft Dateien im aktuellen Ordner
             local_path = os.path.join(os.getcwd(), file_path)
             actual_hash = calculate_sha256(local_path)
 
             if actual_hash == expected_hash:
-                print(f"Datei ist aktuell: {local_path}")
+                print(f"File is up to date: {local_path}")
             else:
-                print(f"Datei fehlt oder ist veraltet: {local_path}")
-                # Download-URL basierend auf mod-1.0 erstellen
+                print(f"File is missing or outdated: {local_path}")
                 file_url = urljoin(BASE_DOWNLOAD_URL, os.path.join(download_path, file_path).replace("\\", "/"))
                 download_file(file_url, local_path)
 
 def main():
     try:
-        # Manifest.json herunterladen
+        # Download manifest.json
         response = requests.get(MANIFEST_URL)
         response.raise_for_status()
         manifest = response.json()
 
-        # Manifest verarbeiten
+        # Process the manifest
         process_manifest(manifest)
 
+        # Final success message
+        print("✅ Manifest processing complete. All files are up to date.")
+
     except requests.RequestException as e:
-        print(f"Fehler beim Abrufen von manifest.json: {e}")
+        print(f"Error fetching manifest.json: {e}")
     except ValueError as e:
-        print(f"Ungültiges Format von manifest.json: {e}")
+        print(f"Invalid format in manifest.json: {e}")
 
 if __name__ == "__main__":
     main()
