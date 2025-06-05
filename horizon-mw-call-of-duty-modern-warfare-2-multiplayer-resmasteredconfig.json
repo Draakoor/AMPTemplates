@@ -99,6 +99,18 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Max Players",
+        "Category": "HorizonMW:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets the max amount of players that can connect, default is 12",
+        "Keywords": "maxclients,clients,",
+        "FieldName": "sv_maxclients",
+        "InputType": "number",
+        "ParamFieldName": "sv_maxclients",
+        "DefaultValue": "12",
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Server Password",
         "Category": "HorizonMW:stadia_controller",
         "Subcategory": "Server:dns:1",
