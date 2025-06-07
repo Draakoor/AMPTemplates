@@ -99,18 +99,6 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Max Players",
-        "Category": "HorizonMW:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "Sets the max amount of players that can connect, default is 12",
-        "Keywords": "maxclients,clients,",
-        "FieldName": "sv_maxclients",
-        "InputType": "number",
-        "ParamFieldName": "sv_maxclients",
-        "DefaultValue": "12",
-        "EnumValues": {}
-    },
-    {
         "DisplayName": "Server Password",
         "Category": "HorizonMW:stadia_controller",
         "Subcategory": "Server:dns:1",
@@ -189,7 +177,7 @@
         "DisplayName": "Player Limit",
         "Category": "HorizonMW:stadia_controller",
         "Subcategory": "Server:dns:1",
-        "Description": "Sets the maximum number of players allowed on the server",
+        "Description": "Sets the maximum number of players allowed on the server (sv_maxclients)",
         "Keywords": "max,players,limit",
         "FieldName": "$MaxUsers",
         "InputType": "number",
@@ -197,6 +185,18 @@
         "ParamFieldName": "sv_maxclients",
         "DefaultValue": "18",
         "Placeholder": "18",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Max Players",
+        "Category": "HorizonMW:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets the amount of max players (this is ui_maxclients)",
+        "Keywords": "maxclients,clients,",
+        "FieldName": "ui_maxclients",
+        "InputType": "number",
+        "ParamFieldName": "ui_maxclients",
+        "DefaultValue": "18",
         "EnumValues": {}
     },
     {
